@@ -1,0 +1,17 @@
+
+
+.chapterName{
+    color: rgb(0, 0, 0);
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    /* background-color: red; */
+    font-size: 0.9em;
+    width: "100%";
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    
+}
+
+.list li{
+    font-size: 0.9em;
+    font-family: "Source Sans Pro", Arial, sans-serif; 
+}

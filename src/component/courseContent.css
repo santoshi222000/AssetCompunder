@@ -1,0 +1,22 @@
+.courseContent{
+    width: 800px;
+    /* border: 2px solid black; */
+    margin-left: 50px;
+}
+
+.courseContent h2{
+    text-align: left;
+    color: rgb(243, 166, 0);
+}
+
+.courseContent p{
+    font-size: 0.9em;
+}
+
+.chapter{
+    color: rgb(128, 126, 126);
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    /* border: 1px solid black; */
+    margin-bottom: 0px;
+    margin-top: 20px;
+}

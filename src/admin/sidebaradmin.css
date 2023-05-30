@@ -1,0 +1,58 @@
+.sidebaradmin{
+    flex: 1;
+ 
+}
+
+.innerdidebar{
+    height: 100vh;
+    position: fixed;
+       /* background-color: red; */
+       /* background-color: #f9f9f9; */
+}
+
+
+.logoadmin{
+    width: 80px;
+    margin-left: 15px;
+}
+
+.logoadmin img{
+    width: 100%;
+}
+
+.middle{
+    padding: 20px;
+}
+
+.middle div{
+    padding-bottom: 20px;
+}
+
+.middle div span{
+    padding-left: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.middle div span:hover{
+    color: red;
+}
+
+.downbutton{
+    margin-top: 300px;
+    padding: 20px;
+}
+
+.signbtn{
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+
+}
+
+ .signbtn:hover{
+    transform: scale(1.1);
+}
+

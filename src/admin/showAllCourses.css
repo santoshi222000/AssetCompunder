@@ -1,0 +1,31 @@
+.showallcourses{
+    flex: 5.3;
+    margin-top: 100px;
+}
+
+.showallcourses h1{
+    text-align: center;
+}
+
+.edit, .delete{
+    /* padding: 8px 30px; */
+    margin-right: 10px;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.td{
+    text-align: center;
+}
+
+.edit{
+    padding: 5px 10px;
+
+}
+
+.add{
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}

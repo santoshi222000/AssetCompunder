@@ -1,0 +1,81 @@
+.banner01{
+    width: 100%;
+    height:400px;
+    margin-top: 200px;
+    background-image: url("../assets/Images/trade3.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.banner01 div{
+    border: 3px solid red;
+    margin-right: 0px;
+
+}
+
+.leftBanner{
+    width: 400px;
+}
+
+.rightBanner{
+    width: 50%;
+
+}
+
+.leftBanner div{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.leftBanner div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.rightBanner div{
+    width: 100%;
+     height: 350px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.rightBanner div p{
+    font-size: 2em;
+    color: black;
+}
+
+.rightBanner div span{
+    color: rgb(243, 166, 0);
+    font-size: 1.5em;
+}
+
+
+@media (max-width: 414px){
+
+    .banner01{
+        margin-bottom: -100px;
+    }
+  
+    .leftBanner{
+        width: 250px;
+       
+    }
+
+    .leftBanner div{
+        height: 250px;
+    }
+
+    .rightBanner{
+        display: none;
+    
+    }
+
+   
+  }

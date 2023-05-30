@@ -1,0 +1,16 @@
+.addContent{
+    width: 80%;
+    margin-top: 100px;
+    padding: 0 200px;
+    margin-left: 200px;
+}
+
+.contentForm{
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.contentForm input{
+    width: 100%;
+}

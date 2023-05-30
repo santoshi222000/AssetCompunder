@@ -1,0 +1,24 @@
+
+.readmore{
+  width: 100px;
+  margin-left: 0px;
+  margin-top: -20px;
+  padding: 5px 0  ;
+  border: 0;
+  background-color: white;
+  color: rgb(243, 166, 0);
+}
+
+.readmore:hover{
+  color: black;
+}
+
+.card{
+  padding: 10px;
+}
+
+.card h2{
+  padding-left: 15px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
