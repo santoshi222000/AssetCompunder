@@ -1,0 +1,61 @@
+.down{
+    margin-top: 100px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-box {
+    padding-top: 20px;
+}
+
+.left-box img{
+   width: 100px;
+}
+
+.left-box  h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.left-box  h4{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+.middle-left h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.middle-left p{
+    cursor: pointer;
+}
+
+.middle-left p:hover{
+    color: red;
+}
+
+.right {
+    height: 320px;
+}
+
+.right img{
+     width: 30px;
+     margin-right: 30px;
+}
+
+.para{
+    text-align: center;
+}
+
+.down hr{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}

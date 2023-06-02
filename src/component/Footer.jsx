@@ -6,6 +6,7 @@ import utube from "../assets/Images/youtube.png";
 import twitter from "../assets/Images/twitter.png";
 import logo from "../assets/Images/logo.png";
 import "../App.css";
+import "./footer.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -52,9 +53,7 @@ function Footer() {
         <div className="right">
 
          <Link to="https://www.facebook.com"> <img src={fb} alt="" /></Link>
-          <img src={twitter} alt="" />
           <Link to="https://www.instagram.com"><img src={insta} alt="" /></Link>
-          <img src={pin} alt="" />
           <Link to="https://www.youtube.com/@AssetCompoundersAcademy"><img src={utube} alt="" /></Link>
         </div>
       </div>

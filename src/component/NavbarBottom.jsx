@@ -2,7 +2,8 @@ import React from "react";
 import about from "../assets/Images/banner1.png";
 import lp2 from "../assets/Images/xy.png";
 import lp3 from "../assets/Images/aa.png";
-import "../App.css";
+// import "../App.css";
+import "./navbarBottom.css";
 
 function NavbarBottom() {
   return (

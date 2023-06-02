@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import "./upperFooter.css";
 
 function Upperfooter() {
   return (
@@ -21,8 +22,7 @@ function Upperfooter() {
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
           earum sapiente dolore debitis possimus recusandae ipsum architecto
-          facilis facere, eaque voluptatibus quam a totam est consequuntur quis!
-          Minus facere sunt fugit. Animi consectetur d?
+          facilis facere, eaque voluptatibus quam a 
         </p>
       </div>
       <div className="learning" id="schedule">
@@ -30,8 +30,7 @@ function Upperfooter() {
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
           earum sapiente dolore debitis possimus recusandae ipsum architecto
-          facilis facere, eaque voluptatibus quam a totam est consequuntur quis!
-          Minus facere sunt fugit. Animi consectetur
+          facilis facere, eaque voluptatibus quam a 
         </p>
       </div>
     </div>

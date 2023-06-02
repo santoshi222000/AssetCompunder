@@ -44,7 +44,7 @@ function ChapterContent() {
                   <td className="td">{e.title}</td>
                   <td className="td">{e.price}</td>
 
-                  <Link to={`/addContent/${e._id}`}><button className="edit">Add Content</button></Link>
+                  <Link to={`/addContent/${e._id}`}><button className="edit">Add Chapter</button></Link>
                   
                   {/* <button className="delete" onClick={()=>deleteCourseDetails(e._id)}>Delete</button>
                   <Link to={`/AddCourseChapterTopic/${e._id}`}><button className="add" >ADD</button></Link> */}

@@ -1,5 +1,6 @@
 import React from 'react'
 import "../App.css";
+import "./aboutFeed.css";
 import about from '../assets/Images/banner1.png'
 import Banner01 from './Banner01';
 import Upperfooter from './Upperfooter';

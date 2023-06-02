@@ -1,5 +1,6 @@
 import React from "react";
-import "../App.css";
+// import "../App.css";
+import "./bar.css";
 import TimelapseIcon from "@mui/icons-material/Timelapse";
 import StartIcon from "@mui/icons-material/Start";
 import ClassIcon from "@mui/icons-material/Class";
@@ -26,22 +27,22 @@ function Bar() {
       <div className="bar">
         {user.map((user) => {
           return (
-            <div>
+            <div className="bar-div">
               <div className="barleft bardev">
-                <TimelapseIcon style={{ marginLeft: "30px", color: "black" }} />
-                <span style={{ marginRight: "40px" }}>
+                <TimelapseIcon/>
+                <span >
                   Duration <br /> {user.duration}
                 </span>
               </div>
               <div className="thin bardev">
-                <StartIcon style={{ marginLeft: "30px", color: "black" }} />
-                <span style={{ marginRight: "40px" }}>
+                <StartIcon />
+                <span>
                   Start <br /> {user.start}{" "}
                 </span>
               </div>
               <div className="bardev">
-                <ClassIcon style={{ marginLeft: "30px", color: "black" }} />
-                <span style={{ marginRight: "40px" }}>
+                <ClassIcon  />
+                <span>
                   Classes <br />
                   {user.classes}
                 </span>

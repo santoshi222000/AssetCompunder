@@ -119,7 +119,7 @@ function Navbar({ start }) {
           </Ul>
         </div>
 
-        <div class="hamburger" id="hamburger" style={{paddingTop: "15px", paddingRight : "80px"}}>
+        <div class="hamburger" id="hamburger" style={{ paddingRight : "80px"}}>
 
           {user ? (
             <NavDropdown title = {user.userName} id="username" >

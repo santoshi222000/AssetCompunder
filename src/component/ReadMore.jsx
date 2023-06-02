@@ -29,7 +29,6 @@ function ReadMoreLess() {
 
   return (
     <div className="card">
-<h2>Facilities</h2>
       <p>
        <ul style={{listStyleType:"circle"}}>
         <li>What is the problem</li>

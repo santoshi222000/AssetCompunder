@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-// import usdinr from "../Images/usdinr.jpg";
-// import st from "../Images/short term.jpg";
-// import lt from "../Images/longterm.jpg";
-// import stock from "../Images/stock market.jpg";
-// import algo from "../Images/algo.jpg";
-// import xyz from "../Images/xyz.png";
-// import echnical from "../Images/echnical any.jpg";
-// import data from "../Images/data enter.jpg";
-import "../App.css";
+// import "../App.css";
+import "./aboutCourse.css";
 import { Link } from "react-router-dom";
 // import {course} from "./DummyData"
 import Courses2 from "../pages/Courses2";
@@ -34,9 +27,10 @@ function AboutCourse(props) {
 
   return (
     <div className="cont1">
-      <h3>{props.heading}</h3>
-      <h2>{props.title}</h2>
-
+      <div className="course-find">
+        <h2 className="h2">COURSES</h2>
+        <h4 className="h4">Explore Our Popular Courses</h4>
+      </div>
       <div className="explore-Courses">
         <div className="explore">
           {course.map((e) => (
@@ -53,7 +47,9 @@ function AboutCourse(props) {
                 </div>
 
                 <Link to={`/course2/${e._id}`}>
-                  <button>Explore More</button>
+                  <button class="button-50" role="button">
+                    Explore More
+                  </button>
                 </Link>
               </div>
             </div>

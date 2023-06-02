@@ -4,6 +4,7 @@ import group from "../assets/Images/400 PX.png";
 import instructor from "../assets/Images/instructor.webp";
 import courselogo from "../assets/Images/courselogo.jpg";
 import "../App.css";
+import "./about.css";
 
 function About() {
   return (

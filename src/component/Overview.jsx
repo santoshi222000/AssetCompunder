@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "./overview.css";
 // import usd from "../assets/Images/USDNIR.webp";
 import b2 from "../assets/Images/b2.jpg";
 import { Params, useParams } from "react-router-dom";

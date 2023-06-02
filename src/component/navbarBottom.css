@@ -1,0 +1,15 @@
+.home{
+    height: 400px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /* border: 1px solid black; */
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
+
+

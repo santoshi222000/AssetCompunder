@@ -15,6 +15,7 @@ function Facilities() {
 
   return (
     <div  className='facility'>
+      <h2>Facilities</h2>
       <ReadMore/>
     </div>
   )

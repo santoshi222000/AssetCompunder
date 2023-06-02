@@ -1,0 +1,62 @@
+.upperfototer{
+    border: 3px solid red;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.upperfototer div{
+    height: 80%;
+    padding: 10px;
+    text-align: left;
+}
+
+.upperfototer div p{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.upperfototer div h2{
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+
+#learn{
+    width: 35%;
+}
+
+#learn div{
+    height: 50%;
+}
+
+.maindiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     border: 8px solid red;
+}
+
+.maindiv div {
+    width: 30%;
+    height: 100%;
+    border: 8px solid blue;
+}
+
+
+#online{
+    width: 25%;
+    background-color: rgb(243, 166, 0);
+    color: black;
+}
+
+#schedule{
+    width: 25%;
+    background-color: grey;
+}

@@ -1,6 +1,7 @@
 .groups{
-    flex: 20;
-    /* border: 1px solid black; */
+    width: 100%;
+    position: relative;
+    top: 180px;
 }
 
 .groupImg{
@@ -21,6 +22,7 @@
 
 .choose{
     margin-top: 100px;
+    padding-left: 30px;
 }
 
 .choose h1{

@@ -1,10 +1,11 @@
 import React from 'react'
-import Course1 from '../pages/Course1'
-import Bar from "../component/Bar";
+import Course1 from './Course1'
+import Bar from "./Bar";
 import Accordian from './Accordian';
 import Overview from './Overview';
 import AboutCourse from "./AboutCourse";
-import "../App.css";
+// import "../App.css";
+import "./feed1.css";
 import CourseCotent from './CourseCotent';
 import Facilities from './Facilities';
 import Faqs from './Faqs';

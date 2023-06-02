@@ -2,11 +2,13 @@
     width: 800px;
     /* border: 2px solid black; */
     margin-left: 50px;
+    margin-top: 100px;
 }
 
 .courseContent h2{
     text-align: left;
-    color: rgb(243, 166, 0);
+    color: black;
+    margin-bottom: 20px;
 }
 
 .courseContent p{

@@ -1,0 +1,76 @@
+.main{
+    margin-top: 50px;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .div{
+    width: 50%;
+    /* height: 500px; */
+    padding: 50px;
+}
+
+.group{
+    height: 250px;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 10px solid rgb(243, 166, 0);
+}
+
+.girl{
+    height: 200px;
+    width: 50%;
+    border: 10px solid rgb(243, 166, 0);
+    position: relative;
+    bottom: 100px;
+    left: 150px;
+}
+
+.div h3{
+    color: rgb(243, 166, 0);
+    font-weight: bold;
+}
+
+.div h2{
+    width: 100%;
+  font-size: 30px;
+  text-align: left;
+}
+
+.div p{
+    color: rgb(128, 126, 126);
+    font-family:'Times New Roman', Times, serif;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.div1{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.div1 img{
+    width: 50px;
+    margin-left:-5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.div1 div{
+    padding-top: 25px;
+}
+
+.div1 div h4{
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}

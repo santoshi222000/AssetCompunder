@@ -1,0 +1,30 @@
+.sides{
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+    height: 50px;
+    position: fixed;
+    top: 0px;  
+    z-index: 2;
+}
+
+.sides div{
+    height: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.sides div a{
+    margin-bottom: 50px;
+    width: 100%;
+   
+}
+
+.insta{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+.sides div a img{
+    width: 25px;
+}

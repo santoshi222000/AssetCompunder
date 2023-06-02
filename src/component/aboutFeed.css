@@ -1,0 +1,62 @@
+.aboutFeed{
+    position: relative;
+    top: 180px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.description{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+
+.description h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.description  p{
+    font-size: 18px;
+}
+
+.description span{
+    color: rgb(243, 166, 0);
+    font-size: 20px;
+}
+
+.trading{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.trading h1{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.quotes{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quotes span{
+    margin-right: 0px;
+    color: rgb(243, 166, 0);
+    font-size: 20px;
+
+}
+

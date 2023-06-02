@@ -1,5 +1,6 @@
 import React from "react";
-import "../App.css";
+// import "../App.css";
+import "./sidebar.css";
 import fb from "../assets/Images/fb.png";
 import insta from "../assets/Images/insta.png";
 import pin from "../assets/Images/pin.png";
@@ -15,7 +16,7 @@ function Sidebar() {
           {" "}
           <img src={fb} alt="" />
         </Link>
-        <Link to="https://www.instagram.com">
+        <Link to="https://www.instagram.com" className="insta">
           <Link>
             <img src={insta} alt="" />
           </Link>

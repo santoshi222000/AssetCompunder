@@ -5,6 +5,7 @@ import About from "../component/About";
 import AboutCourse from "../component/AboutCourse";
 import Upperfooter from "../component/Upperfooter";
 import Footer from "../component/Footer";
+import "./feed.css";
 
 
 function Feed() {
