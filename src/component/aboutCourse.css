@@ -66,8 +66,9 @@
 }
 
 .main-content p{
-    color: white;
+    color: #fff;
     font-size: 13px;
+    font-family: 'Roboto'
 }
 
 .boxes img{
@@ -91,6 +92,7 @@
 
 .prices p{
     color: black;
+
 }
 
 

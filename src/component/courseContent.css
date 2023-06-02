@@ -17,7 +17,8 @@
 
 .chapter{
     color: rgb(128, 126, 126);
-    font-family: "Source Sans Pro", Arial, sans-serif;
+    /* font-family: "Source Sans Pro", Arial, sans-serif; */
+    font-family: 'roboto';
     /* border: 1px solid black; */
     margin-bottom: 0px;
     margin-top: 20px;

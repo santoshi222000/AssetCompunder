@@ -27,6 +27,7 @@
 
 .description  p{
     font-size: 18px;
+        font-family: 'Roboto';
 }
 
 .description span{
@@ -45,6 +46,10 @@
 .trading h1{
     font-weight: bold;
     margin-bottom: 50px;
+}
+
+.trading p{
+    font-family: 'roboto';
 }
 
 .quotes{

@@ -46,7 +46,8 @@
 
 .div p{
     color: rgb(128, 126, 126);
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Roboto';
+    font-size: 15px;
     line-height: 22px;
     margin-top: 10px;
 }

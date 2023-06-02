@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
-import "../App.css";
+// import "../App.css";
+import "./register.css";
 import Upperfooter from "../component/Upperfooter";
 import Footer from "../component/Footer";
 import { Link } from "react-router-dom";
@@ -7,6 +8,7 @@ import Navbar from "../component/Navbar";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Burger from "../component/Burger";
+import Sidebar from "../component/Sidebar";
 
 function Register() {
   const navigate = useNavigate();
@@ -51,10 +53,16 @@ function Register() {
     }
   };
 
+  const navigateRegister = () => {
+    navigate("/login");
+  };
+
+
   return (
     <div className="register">
+        <Sidebar />
       <Burger />
-      <div class="form">
+      <div class="forms">
           <h2>Register</h2>
           <div>
             <input
@@ -73,7 +81,7 @@ function Register() {
             />{" "}
             Admin
           </div>
-          <form class="form-details" onSubmit={handleClick}>
+          <form class="form-input" onSubmit={handleClick}>
             {userType == "Admin" ? (
               <input
                 type="text"
@@ -113,7 +121,15 @@ function Register() {
                 <button>Login</button>
               </Link>
             </div>
+
+            <p className="para" style={{ textAlign: "center", color: "black" }}>
+              Already, Account? 
+              <span onClick={navigateRegister} style={{ color: "blue", cursor: "pointer" }}>
+                Login
+              </span>
+            </p>
           </form>
+
         </div>
       <Upperfooter />
       <Footer />

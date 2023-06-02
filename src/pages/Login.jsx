@@ -1,5 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
-import "../App.css";
+// import "../App.css";
+import "./login.css";
 import Upperfooter from "../component/Upperfooter";
 import Footer from "../component/Footer";
 import { Link, useNavigate } from "react-router-dom";
@@ -11,6 +12,7 @@ import Burger from "../component/Burger";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {message } from  'antd'
+import Sidebar from "../component/Sidebar";
 
 function Login() {
   const navigate = useNavigate();
@@ -30,8 +32,8 @@ function Login() {
       { email: email.current.value, password: password.current.value },
       dispatch
     )
-    console.log(user);
-    navigate('/admin/${user.user_id}')
+    // console.log(user);
+    // navigate('/admin/${user.user_id}')
 
   };
 
@@ -41,6 +43,7 @@ function Login() {
 
   return (
     <div>
+      <Sidebar />
       <Burger />
       <div className="register">
         <form class="form" onSubmit={handleClick}>
@@ -61,8 +64,8 @@ function Login() {
               name="password"
               ref={password}
             />
-            <Link to="/resetpassword">
-              <p>Forget Password</p>
+            <Link to="/resetpassword" >
+              <p className="forget">Forget Password</p>
             </Link>
             <div>
               <button className="login" type="submit" disabled={isFetching}>
@@ -72,7 +75,7 @@ function Login() {
 
             <p className="para" style={{ textAlign: "center", color: "black" }}>
               Don't have an account, yet?{" "}
-              <span onClick={navigateRegister} style={{ color: "blue" }}>
+              <span onClick={navigateRegister} style={{ color: "blue", cursor: "pointer" }}>
                 Register
               </span>
             </p>

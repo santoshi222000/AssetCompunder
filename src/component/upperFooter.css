@@ -30,6 +30,12 @@
 
 #learn{
     width: 35%;
+    border: 1px solid white;
+}
+
+#learn p{
+    font-family: 'Roboto';
+    margin-left: 17px;
 }
 
 #learn div{
@@ -50,13 +56,26 @@
 }
 
 
+
+
 #online{
     width: 25%;
-    background-color: rgb(243, 166, 0);
+    /* background-color: rgb(243, 166, 0); */
+    background-color: white;
     color: black;
+}
+
+#online p{
+    font-family: 'Roboto';
+    font-size: 15px;
 }
 
 #schedule{
     width: 25%;
     background-color: grey;
+}
+
+#schedule p{
+    font-family: 'Roboto';
+    font-size: 15px;
 }
