@@ -1,5 +1,4 @@
 .upperfototer{
-    border: 3px solid red;
     width: 100%;
     background-color: black;
     color: white;
@@ -30,7 +29,6 @@
 
 #learn{
     width: 35%;
-    border: 1px solid white;
 }
 
 #learn p{
@@ -44,16 +42,31 @@
 
 .maindiv{
     display: flex;
-    align-items: center;
-    justify-content: center;
-     border: 8px solid red;
+    height: 100%;
+    /* align-items: center; */
+    justify-content: space-around;
 }
 
 .maindiv div {
-    width: 30%;
-    height: 100%;
-    border: 8px solid blue;
+    width: 26%;
+    min-height: 100px;
+    border-radius: 50%;
 }
+
+.maindiv .first{
+    width: 8%;
+    max-height: 100px;
+    position: absolute;
+    border: 1px solid white;
+}
+
+.maindiv .second{
+     margin-top: -10px;
+     margin-left: -10px;
+     border: 1px solid white;
+}
+
+
 
 
 

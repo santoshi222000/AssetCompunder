@@ -1,15 +1,31 @@
 .home{
-    height: 400px;
-    margin-top: 80px;
+    /* border: 2px solid blue; */
+  height: 700px;
     margin-bottom: 80px;
-    /* border: 1px solid black; */
+    background: url('../assets/Images/ba.jpg') no-repeat  center;
 }
 
-#carouselExampleIndicators {
-    width: 100%;
+.carousel  {
+    width: 70%;
+    height: 60%;
+    /* display: none; */
+    position: absolute;
+    top: 140px;
+    margin: auto;
+
+}
+
+.carousel-inner{
     height: 100%;
-    margin-top: 40px;
-    /* border: 1px solid red; */
+}
+
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
 }
 
 

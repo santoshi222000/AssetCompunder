@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useState } from "react";
 import './sidebaradmin.css'
 import logo from '../assets/Images/logo.png'
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -10,9 +10,21 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import DetailsIcon from '@mui/icons-material/Details';
 import { Link } from 'react-router-dom';
+import { AuthContext } from "../context/AuthContext";
+import ReactRouterBootstrap, { LinkContainer } from "react-router-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 
 function Sidebaradmin() {
+
+    const { user, isFetching, error, dispatch } = useContext(AuthContext);
+
+    const logoutHandler = () => {
+        console.log("logout");
+      };
+
+
   return (
     <div className='sidebaradmin'>
         <div className='innerdidebar'>
@@ -69,9 +81,18 @@ function Sidebaradmin() {
             </div>
            </Link>
         </div>
-        <div className='downbutton'>
-            <hr></hr>
-            <button className="signbtn">Sign Up</button>
+        <div class="hamburger" id="hamburger" style={{ paddingRight: "80px" }}>
+          {user ? (
+            <NavDropdown title={user.userName} id="username">
+              <NavDropdown.Item onClick={logoutHandler}>
+                Sign out
+              </NavDropdown.Item>
+            </NavDropdown>
+          ) : (
+            <LinkContainer to="/login">
+              <Nav.Link>Sign Up</Nav.Link>
+            </LinkContainer>
+          )}
         </div>
         </div>
     </div>

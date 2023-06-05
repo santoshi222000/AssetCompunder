@@ -16,6 +16,8 @@ import Topic from "./admin/Topic";
 import EditCourse from "./adminPages/EditCourse";
 import CoursePurchase from "./adminPages/CoursePurchase";
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
+import AdminAccess from "./admin/AdminAccess";
+import Protected from "./component/Protected";
 
 function App() {
 
@@ -28,16 +30,17 @@ function App() {
             <Route path="/course2/:id" element={ <Courses2 /> } />
             <Route path="/login" element={ <Login /> } />
             <Route path="/register" element={ <Register /> } />
-            <Route path="/addCourses" element={ <AddCourses /> } />
-            <Route path="/allCourses" element={ <AllCourses /> } />
-            <Route path="/user" element={ <User/> } />
-            <Route path="/dashboard" element={ <Dashboard/> } />
-            <Route path="/addCourseChapter" element={ <AddCourseChapter/> } />
-            <Route path="/addContent/:id" element={ <AddContent/> } />
-            <Route path="/addTopic" element={ <AddTopic/> } />
-            <Route path="/topic/:id" element={ <Topic/> } />
-            <Route path="/editCourse/:id" element={ <EditCourse/> } />
-            <Route path="/coursePurchase" element={ <CoursePurchase/> } />
+            <Route path="/addCourses" element={ <Protected Comp = {AddCourses}/> } />
+            <Route path="/allCourses" element={ <Protected Comp = {AllCourses}/> } />
+            <Route path="/user" element={ <Protected Comp = {User}/> } />
+            <Route path="/dashboard" element={ <Protected Comp = {Dashboard}/> } />
+            <Route path="/addCourseChapter" element={ <Protected Comp = {AddCourseChapter}/>} />
+            <Route path="/addContent/:id" element={ <Protected Comp = {AddContent}/> } />
+            <Route path="/addTopic" element={ <Protected Comp = {AddTopic}/>} />
+            <Route path="/topic/:id" element={ <Protected Comp = {Topic}/>} />
+            <Route path="/editCourse/:id" element={<Protected Comp = {EditCourse}/>} />
+            <Route path="/coursePurchase" element={ <Protected Comp = {CoursePurchase}/> } />
+            <Route path="/admin" element={ <AdminAccess/> } />
           </Routes>
     </div>
   );

@@ -3,16 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
+   
 }
 
 body{
-    background-color: #f9f9f9;
+    background-color: #fff;
 }
 
 .navbarGo{
     position: fixed;
     width: 100%;
-    z-index: 2;
+   z-index: 2;
     top: 50px;
 }
 
@@ -85,15 +86,13 @@ body{
 
 @media (max-width: 893px){
 
-    .navbar{
+    /* .navbar{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        /* justify-content: flex-start; */
-        /* z-index: 999; */
     }
 
-    /* .nav{
+    .nav{
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -103,7 +102,7 @@ body{
         right: 0px;
         top: 70px;
 
-    } */
+    }
 
     .nav ul{
         display: flex;
@@ -120,6 +119,6 @@ body{
     .logo{
        margin-top: -10px;
     }
-  
+   */
 
 }

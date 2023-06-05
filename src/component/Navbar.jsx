@@ -1,4 +1,4 @@
-import React, {useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import logo from "../assets/Images/logo.png";
 import close from "../assets/Images/close.png";
 import menu from "../assets/Images/menu.png";
@@ -9,9 +9,9 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import { useEffect } from "react";
 import { AuthContext } from "../context/AuthContext";
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import ReactRouterBootstrap, { LinkContainer } from 'react-router-bootstrap';
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import ReactRouterBootstrap, { LinkContainer } from "react-router-bootstrap";
 import { NavLink } from "react-router-dom";
 import {
   getcourse,
@@ -30,28 +30,26 @@ const Ul = styled.ul`
     flex-direction: column;
     align-item: flex-start;
     justify-content: flex-start;
-    background-color: #0d2538;
+    // background-color: #0d2538;
     transform: ${({ start }) => (start ? "translateX(0)" : "translateX(100%)")};
     position: fixed;
-    top: 70px;
+    top: 155px;
     right: 0px;
-    height: 100px;
+    height: 100vh;
     width: 300px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 0;
     border: 1px solid black;
     transition: transform 0.3s ease-in-out;
+    background-color: black;
     z-index: 999;
-
-    li {
-    }
-
-    li a {
-      color: red;
-    }
+    padding-bottom: 200px;
 
     li a:hover {
       color: red;
+    }
+
+    li {
+      border: "2px solid red";
     }
   }
 `;
@@ -61,7 +59,7 @@ function Navbar({ start }) {
 
   const [course, setCourse] = useState([]);
 
-  const {user, isFetching, error, dispatch} = useContext(AuthContext)
+  const { user, isFetching, error, dispatch } = useContext(AuthContext);
 
   useEffect(() => {
     getAllCourses();
@@ -73,9 +71,9 @@ function Navbar({ start }) {
     // console.log();
   };
 
-  const logoutHandler = ()=>{
+  const logoutHandler = () => {
     console.log("logout");
-  }
+  };
 
   return (
     <navbar className="navbarGo">
@@ -102,14 +100,14 @@ function Navbar({ start }) {
               <div className="class">
                 {course.map((item, i) => (
                   <div className="item">
-                  <Link to={`/course2/${item._id}`}>
-                    <p>{item.title}</p>
-                  </Link>
-                </div>
+                    <Link to={`/course2/${item._id}`}>
+                      <p>{item.title}</p>
+                    </Link>
+                  </div>
                 ))}
               </div>
             )}
-           
+
             <li>
               <Link to="/group">Groups</Link>
             </li>
@@ -119,21 +117,18 @@ function Navbar({ start }) {
           </Ul>
         </div>
 
-        <div class="hamburger" id="hamburger" style={{ paddingRight : "80px"}}>
-
+        <div class="hamburger" id="hamburger" style={{ paddingRight: "80px" }}>
           {user ? (
-            <NavDropdown title = {user.userName} id="username" >
-                  <NavDropdown.Item onClick={logoutHandler}  >
-                    Logout
-                  </NavDropdown.Item>
+            <NavDropdown title={user.userName} id="username">
+              <NavDropdown.Item onClick={logoutHandler}>
+                Logout
+              </NavDropdown.Item>
             </NavDropdown>
-          
-          ): (   <LinkContainer to= '/login' >
-            <Nav.Link>
-              Login
-            </Nav.Link>
-      </LinkContainer>)}
-         
+          ) : (
+            <LinkContainer to="/login">
+              <Nav.Link>Login</Nav.Link>
+            </LinkContainer>
+          )}
         </div>
       </div>
     </navbar>

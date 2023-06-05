@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { ToastContainer, toast } from "react-toastify";
 
 const URL = "http://localhost:5001";
 
@@ -68,11 +69,11 @@ export const loginCall = async (userCredential, dispatch) =>{
       
         const res = await axios.post(`${URL}/api/user/login`, userCredential);
         dispatch({type: "LOGIN_SUCCESS", payload: res.data})
-        alert("Login Successful")
         
     } catch (error) {
-        alert("pLEASE CHECK CRENDENTIALS")
+        toast.warn("Login Failed")
         dispatch({type: "LOGIN_FAILURE", payload: error})
+        
     }
 }
 export const changePassword = async ()=>{

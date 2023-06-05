@@ -21,19 +21,26 @@ function Login() {
 
   const { user, isFetching, error, dispatch } = useContext(AuthContext);
 
-  const [admin, setAdmin] = useState(false);
-
 
 
   const handleClick = async (e) => {
     e.preventDefault();
     
-    await loginCall(
-      { email: email.current.value, password: password.current.value },
-      dispatch
-    )
+
+    try {
+      await loginCall(
+        { email: email.current.value, password: password.current.value },
+        dispatch
+      )
+       toast.success('Login Successful');
+    } catch (error) {
+      toast.warn('Login Failed');
+    }
+   
+   
+    // console.log(res);
     // console.log(user);
-    // navigate('/admin/${user.user_id}')
+     navigate('/admin')
 
   };
 
@@ -68,9 +75,10 @@ function Login() {
               <p className="forget">Forget Password</p>
             </Link>
             <div>
-              <button className="login" type="submit" disabled={isFetching}>
+              <button class="button-50" role="button" type="submit" disabled={isFetching}>
                 {isFetching ? <CircularProgress size="20px" /> : "Login"}
               </button>
+           
             </div>
 
             <p className="para" style={{ textAlign: "center", color: "black" }}>
@@ -83,7 +91,9 @@ function Login() {
         </form>
         <Upperfooter />
         <Footer />
+        {/* <ToastContainer/> */}
       </div>
+    
     </div>
   );
 }

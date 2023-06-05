@@ -116,9 +116,9 @@ function Register() {
               required
             />
             <div className="register-btn">
-              <button  type="submit">Register</button>
+              <button class="button-50" id="button10" role="button"  type="submit">Register</button>
               <Link to="/login">
-                <button>Login</button>
+                <button class="button-50" role="button">Login</button>
               </Link>
             </div>
 
