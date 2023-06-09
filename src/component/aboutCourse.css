@@ -32,6 +32,8 @@
 .explore{
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -95,9 +97,17 @@
 
 }
 
+/* .buttonbtn{
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+} */
 
 
-.button-50 {
+
+.button-20 {
     width: 100%;
     
     appearance: button;
@@ -124,30 +134,87 @@
     -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
-    border: 3px solid red;
+    margin: auto;
   }
   
-  .button-50:focus {
+  .button-20:focus {
     text-decoration: none;
   }
   
-  .button-50:hover {
+  .button-20:hover {
     text-decoration: none;
   }
   
-  .button-50:active {
+  .button-20:active {
     box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
     outline: 0;
   }
   
-  .button-50:not([disabled]):active {
+  .button-20:not([disabled]):active {
     box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
   
   @media (min-width: 768px) {
-    .button-50 {
+    .button-20 {
       padding: 12px 50px;
     }
   }
+
+
+  @media (max-width: 900px){
+  .boxes{
+    width: 60%;
+  }
+}
+
+  @media (max-width: 700px){
+  .boxes{
+    width: 70%;
+  }
+}
+
+  @media (max-width: 572px){
+  .boxes{
+    width: 80%;
+  }
+}
+
+  @media (max-width: 486px){
+   .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 70%;
+   }
+
+   .course-img{
+           width: 100%;
+           height: 45%;
+   }
+
+   .main-content{
+         width: 100%;
+         height: 55%;
+   }
+}
+
+  @media (max-width: 486px){
+   .boxes{
+    height: 450px;
+    width: 80%;
+   }
+
+   .course-img{
+           width: 100%;
+           height: 45%;
+   }
+
+   .main-content{
+         width: 100%;
+         height: 55%;
+   }
+}
 

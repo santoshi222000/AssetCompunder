@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState , useContext} from "react";
 // import "../App.css";
 import "./aboutCourse.css";
 import { Link } from "react-router-dom";
 // import {course} from "./DummyData"
 import Courses2 from "../pages/Courses2";
 import { useEffect } from "react";
+import { AuthContext } from "../context/AuthContext";
 import {
   getcourse,
   getCourseDetailInBrief,
@@ -13,6 +14,8 @@ import {
 
 function AboutCourse(props) {
   const [course, setCourse] = useState([]);
+
+  const { user, isFetching, error, dispatch } = useContext(AuthContext);
 
   useEffect(() => {
     getAllCourses();
@@ -47,7 +50,10 @@ function AboutCourse(props) {
                 </div>
 
                 <Link to={`/course2/${e._id}`}>
-                  <button class="button-50" role="button">
+                  {/* <button class="buttonbtn" >
+                    Explore More
+                  </button> */}
+                  <button class="button-20" role= "button" >
                     Explore More
                   </button>
                 </Link>

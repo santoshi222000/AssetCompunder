@@ -14,6 +14,7 @@
     text-align: center;
 }
 
+
 .sides div a{
     margin-bottom: 50px;
     width: 100%;
@@ -28,4 +29,16 @@
 
 .sides div a img{
     width: 25px;
+}
+
+@media (max-width: 1026px){
+    .sides div{
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .insta{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }

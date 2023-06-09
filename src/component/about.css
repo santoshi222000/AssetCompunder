@@ -1,36 +1,53 @@
 .main{
     margin-top: 50px;
+    width: 100%;
 }
 
 
-.container{
+.containerr{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container .div{
+.containerr .div{
     width: 50%;
     /* height: 500px; */
     padding: 50px;
 }
 
-.group{
-    height: 250px;
-    width: 60%;
-    margin-top: 50px;
-    margin-left: 20px;
+.gp{
+    width: 300px;
+    height: 270px;
     border: 10px solid rgb(243, 166, 0);
+    margin-left: 20px;
+    margin-top: 50px;
 }
 
-.girl{
-    height: 200px;
-    width: 50%;
+.gp1{
+    width: 250px;
     border: 10px solid rgb(243, 166, 0);
     position: relative;
     bottom: 100px;
     left: 150px;
+    height: 220px;
+}
+
+.group{
+   
+    width: 100%;
+    height: 100%;
+   
+  
+   
+}
+
+.girl{
+   
+    width: 100%;
+    height: 100%;
+   
 }
 
 .div h3{
@@ -74,4 +91,75 @@
     cursor: pointer;
     font-size: 18px;
     margin-top: 20px;
+}
+
+@media (max-width: 996px){
+    .gp{
+        width: 250px;
+    }
+
+    .gp1{
+        width: 200px;
+    }
+}
+
+@media (max-width: 810px){
+    .containerr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerr .div{
+        width: 90%;
+    }
+
+    #dives{
+        text-align: center;
+        height: 500px;
+        padding-top: 0px;
+    }
+
+    .gp{
+        width: 350px;
+        height: 300px;
+        /* margin-left: -30px; */
+        /* margin: auto; */
+    }
+
+    .gp1{
+        width: 300px;
+        height: 250px;
+        margin-left: 30px;
+        /* margin: auto; */
+    }
+}
+
+@media (max-width: 610px){
+    .gp{
+        width: 250px;
+        height: 250px;
+    }
+
+    .gp1{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 490px){
+    .gp{
+        width: 200px;
+        height: 200px;
+    }
+
+    .gp1{
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+        margin-left: -20px;
+    }
+
+    #dives{
+        height: 350px;
+    }
 }

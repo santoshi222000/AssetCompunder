@@ -3,16 +3,21 @@ import girl from "../assets/Images/300 PX.png";
 import group from "../assets/Images/400 PX.png";
 import instructor from "../assets/Images/instructor.webp";
 import courselogo from "../assets/Images/courselogo.jpg";
-import "../App.css";
+// import "../App.css";
 import "./about.css";
 
 function About() {
   return (
     <div className="main">
-      <div className="container">
+      <div className="containerr">
         <div className="div " id="dives">
+          <div className="gp">
           <img className="group" src={group} alt="" />
+          </div>
+          <div className="gp1">
           <img className="girl" src={girl} alt="" />
+          </div>
+         
         </div>
         <div className="div" id="driven">
           <h3>ABOUT US</h3>

@@ -42,7 +42,7 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
     background-color: black;
     z-index: 999;
-    padding-bottom: 200px;
+    padding-bottom: 80px;
 
     li a:hover {
       color: red;

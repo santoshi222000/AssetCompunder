@@ -2,6 +2,9 @@ import React from 'react'
 import axios from 'axios'
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function Topic() {
 
@@ -22,9 +25,10 @@ function Topic() {
   const handleOnClick = async (e) => {
     e.preventDefault();
     try {
-      return await axios.put(`http://localhost:5001/api/content/topic/${id}`, user)
+   await axios.put(`http://localhost:5001/api/content/topic/${id}`, user)
+      toast.success("Successfully Add")
    } catch (error) {
-       console.log("are u not able to add data", error);
+    toast.warn("Something went Wrong")
    }
   }
 
@@ -46,6 +50,7 @@ function Topic() {
             <button className="sendbtn" onClick={handleOnClick}>Add</button>
           </form>
       </div>
+      <ToastContainer/>
       </div>
   )
 }

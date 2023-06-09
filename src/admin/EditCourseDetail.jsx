@@ -2,6 +2,8 @@ import React, {useEffect, useState}from "react";
 import { editCourse,editcourseDetail } from "../services/api";
 import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
 import { useNavigate, useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function EditCourseDetail() {
 
@@ -50,6 +52,7 @@ function EditCourseDetail() {
     // }
     
       await  editcourseDetail(user, id);
+      toast.success("Successfully Add")
       navigate("/allcourses")
   // }
 
@@ -157,6 +160,7 @@ function EditCourseDetail() {
           </form>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 }

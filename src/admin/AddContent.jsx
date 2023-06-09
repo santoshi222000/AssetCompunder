@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect , useContext} from "react";
 import "./addContent.css";
 import { editCourse,addCourseContent } from "../services/api";
 import axios from 'axios';
 import { Params, useNavigate, useParams } from "react-router-dom";
 import Sidebaradmin from "./Sidebaradmin";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { AuthContext } from "../context/AuthContext";
 
 function AddContent() {
 
@@ -17,19 +20,21 @@ function AddContent() {
     course : "",
   }
 
-  
-  const [user, setUser] = useState(defaultaDta);
+  const { user, isFetching, error, dispatch } = useContext(AuthContext);
+
+  const [users, setUsers] = useState(defaultaDta);
 
   const onChangeData = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value })
+    setUsers({ ...users, [e.target.name]: e.target.value })
   }
 
   const handleOnClick = async (e) => {
     e.preventDefault();
     try {
-      return await axios.post(`http://localhost:5001/api/route/addContent/${id}`, user)
+     await axios.post(`http://localhost:5001/api/content/addContent/${id}`, users)
+      toast.success("Successfully Add")
    } catch (error) {
-       console.log("are u not able to add data", error);
+      toast.warn("Something went Wrong")
    }
   }
 
@@ -41,12 +46,6 @@ function AddContent() {
      
         <div className="contentForm">
           <form action="">
-            {/* <div>
-              <label htmlFor="" style={{ display: "block" }}>
-                Course 
-              </label>
-              <input type="text" placeholder="Know More" name="title" onChange={(e) => onChangeData(e)} />
-            </div> */}
             <div>
               <label htmlFor="" style={{ display: "block" }}>
                 Chapter
@@ -64,6 +63,7 @@ function AddContent() {
           </form>
       </div>
       </div>
+      <ToastContainer/>
       </>
   )
   }

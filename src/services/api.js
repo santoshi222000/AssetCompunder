@@ -3,6 +3,16 @@ import { ToastContainer, toast } from "react-toastify";
 
 const URL = "http://localhost:5001";
 
+
+const getAxiosHeader = (token) => {
+    return {
+        headers: {
+            'Content-Type': 'application/json',
+            'authorization': "Bearer" + token
+        }
+    }
+}
+
 export const addcourses = async(data)=>{
 
     console.log(data);
@@ -16,7 +26,7 @@ export const addcourses = async(data)=>{
 
 export  const getcourse = async ()=>{
    try{
-       return await axios.get(`${URL}/api/route/`); 
+       return await axios.get(`${URL}/api/route/`, getAxiosHeader()); 
    }catch(error){
       console.log("error while getting the course", error);
    }   
@@ -50,7 +60,7 @@ export const  editcourseDetail = async (user, id)=>{
     try {
         return await axios.post(`${URL}/api/route/${id}`, user)
     } catch (error) {
-        console.log("error while updating the detail", error);
+        toast.success("Something went wrong")
     }
 }
 
@@ -68,6 +78,7 @@ export const loginCall = async (userCredential, dispatch) =>{
     try {
       
         const res = await axios.post(`${URL}/api/user/login`, userCredential);
+        console.log(res);
         dispatch({type: "LOGIN_SUCCESS", payload: res.data})
         
     } catch (error) {

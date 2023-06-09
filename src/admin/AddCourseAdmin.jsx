@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import "./addCourseAdmin.css";
 import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
 import { addcourses,addCourseContent } from "../services/api";
 import axios from 'axios';
 import { Params, useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { AuthContext } from "../context/AuthContext";
 
 function AllCourseAdmin() {
 
@@ -23,8 +26,10 @@ function AllCourseAdmin() {
     topic: []
   }
 
+  const { user, isFetching, error, dispatch } = useContext(AuthContext);
+
   const [file, setFile] = useState("");
-  const [user, setUser] = useState(defaultaDta);
+  const [users, setUsers] = useState(defaultaDta);
 
   const { id } = useParams();
 
@@ -40,7 +45,7 @@ function AllCourseAdmin() {
 
 
   const onChangeData = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value })
+    setUsers({ ...users, [e.target.name]: e.target.value })
   }
 
   // const imageUpload =(e)=>{
@@ -54,7 +59,7 @@ function AllCourseAdmin() {
       const fileName = file.name;
       data.append("file", file);
       data.append("name", fileName);
-      user.img = fileName;
+      users.img = fileName;
     
     try {
       await axios.post("http://localhost:5001/api/upload", data)
@@ -63,9 +68,16 @@ function AllCourseAdmin() {
     }
   }
     try {
-      return await axios.post(`http://localhost:5001/api/route/addcourses`, user)
+       await axios.post(`http://localhost:5001/api/route/addcourses`, user, {
+        headers: {
+          'Content-Type': 'application/json',
+          'x-auth-token': user.token
+      }
+       });
+      toast.success('Course add Successfully');
+      setUsers({})
    } catch (error) {
-       console.log("are u not able to add data", error);
+    toast.warn('Something went Wrong');
    }
   }
 
@@ -160,6 +172,7 @@ function AllCourseAdmin() {
           </form>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 }

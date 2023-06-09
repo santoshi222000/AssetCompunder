@@ -13,8 +13,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {message } from  'antd'
 import Sidebar from "../component/Sidebar";
+// import { useDispatch } from 'react-redux';
+import Userboard from "../admin/Userboard";
 
 function Login() {
+
+  // const disptach = useDispatch()
   const navigate = useNavigate();
   const email = useRef();
   const password = useRef();
@@ -32,14 +36,12 @@ function Login() {
         { email: email.current.value, password: password.current.value },
         dispatch
       )
+
        toast.success('Login Successful');
     } catch (error) {
       toast.warn('Login Failed');
     }
    
-   
-    // console.log(res);
-    // console.log(user);
      navigate('/admin')
 
   };
