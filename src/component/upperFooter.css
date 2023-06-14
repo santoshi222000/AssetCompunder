@@ -92,3 +92,57 @@
     font-family: 'Roboto';
     font-size: 15px;
 }
+
+@media (max-width: 1026px){
+   .upperfototer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 30px;
+    height: 700px;
+    padding-bottom: 30px;
+   }
+
+   #learn{
+    width: 95%;
+    margin-top: 30px;
+}
+
+   #learn h2{
+   text-align: left;
+}
+
+
+
+   .maindiv{
+    display: none;
+   }
+
+   
+#online{
+    width: 95%;
+    margin-bottom: 30px;
+    
+}
+
+#online h2{
+    text-align: left;
+}
+
+#schedule{
+    width: 95%;
+}
+
+#schedule h2{
+    text-align: left;
+}
+
+
+}
+
+@media (max-width: 1026px){
+    .upperfototer{
+        height: 900px;
+       }
+}

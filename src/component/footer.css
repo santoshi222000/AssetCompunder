@@ -53,6 +53,7 @@
 
 .para{
     text-align: center;
+    font-size: 13px;
 }
 
 .down hr{
@@ -60,4 +61,42 @@
     margin: auto;
     margin-bottom: 20px;
     margin-top: 50px;
+}
+
+@media (max-width: 700px){
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: flex-start;
+        padding-left: 30px;
+        height: 900px;
+    }
+
+    .middle-left{
+        margin-top: 50px;
+    }
+
+    .right{
+        margin-top: 50px;
+    }
+
+    .down hr{
+        margin-top: 50px;
+    }
+
+    
+}
+
+@media (max-width: 700px){
+    .para{
+         font-size: 11px;
+    }
+}
+
+@media (max-width: 400px){
+    .para{
+         font-size: 10px;
+    }
 }

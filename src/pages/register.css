@@ -25,7 +25,7 @@
 .form-input input{
     width: 98%;
     margin-bottom: 20px;
-  
+    outline: none;
 }
 
 .register-btn{

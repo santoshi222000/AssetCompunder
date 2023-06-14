@@ -31,3 +31,9 @@
 .box  h3{
     font-size: 1.5rem;
 }
+
+@media (max-width: 820px){
+    .slides{
+     display: none;
+    }
+ }

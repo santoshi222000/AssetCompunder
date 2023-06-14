@@ -19,6 +19,10 @@
     height: 100%;
 }
 
+.inner{
+    height: 100%;
+}
+
 
 .carousel-item {
     height: 100%;
@@ -26,6 +30,34 @@
 
 .carousel-item img{
     height: 100%;
+}
+
+@media (max-width: 1026px){
+   .carousel{
+    width: 90%;
+   }
+}
+
+@media (max-width: 830px){
+   .carousel{
+    width: 95%;
+   }
+}
+
+@media (max-width: 700px){
+    
+    .inner{
+        display: none;
+    }
+
+
+    .carousel button{
+        display: none;
+    }
+
+    .carousel-inner{
+        background: url('../assets/Images/aa.png') no-repeat  center;
+    }
 }
 
 

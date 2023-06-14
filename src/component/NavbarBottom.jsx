@@ -47,43 +47,44 @@ function NavbarBottom() {
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={lp3} class="d-block w-100" alt="..." />
-          </div>
+          <div className="inner">
+            <div class="carousel-item active">
+              <img src={lp3} class="d-block w-100" alt="..." />
+            </div>
 
-          <div class="carousel-item " id="cItem">
-            <div
-              style={{
-                color: "black",
-                position: "absolute",
-                marginTop: "100px",
-                marginLeft: "200px",
-              }}
-            >
-              <h1 style={{ fontSize: "3em", lineHeight: "68px" }}>
-                <span style={{ fontSize: "70px", color: "rgb(243, 166, 0)" }}>
-                  {" "}
-                  Algorithmic
-                </span>{" "}
-                <br /> Trading B2E
-              </h1>
-              <button
+            <div class="carousel-item " id="cItem">
+              <div
                 style={{
-                  color: "white",
-                  backgroundColor: "rgb(243, 166, 0)",
-                  border: "none",
-                  padding: "5px",
-                  marginTop: "10px",
+                  color: "black",
+                  position: "absolute",
+                  marginTop: "100px",
+                  marginLeft: "200px",
                 }}
               >
-                Join Know
-              </button>
+                <h1 style={{ fontSize: "3em", lineHeight: "68px" }}>
+                  <span style={{ fontSize: "70px", color: "rgb(243, 166, 0)" }}>
+                    {" "}
+                    Algorithmic
+                  </span>{" "}
+                  <br /> Trading B2E
+                </h1>
+                <button
+                  style={{
+                    color: "white",
+                    backgroundColor: "rgb(243, 166, 0)",
+                    border: "none",
+                    padding: "5px",
+                    marginTop: "10px",
+                  }}
+                >
+                  Join Know
+                </button>
+              </div>
+              <img src={lp2} class="d-block w-100" alt="..." />
             </div>
-            <img src={lp2} class="d-block w-100" alt="..." />
-
-          </div>
-          <div class="carousel-item">
-            <img src={about} class="d-block w-100" alt="..." />
+            <div class="carousel-item " id="cItem1">
+              <img src={about} class="d-block w-100" alt="..." />
+            </div>
           </div>
         </div>
         <button
