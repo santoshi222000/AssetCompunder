@@ -45,8 +45,8 @@ function BriefInfo() {
         <p className="fee">{e.start}</p>
            <button class="button-50" role="button">Enroll Now</button>
           </div>
-         );
-        })}; 
+         )
+        })}
       {/* <div>
         <h2>usdinr</h2>
         <p className="desc">

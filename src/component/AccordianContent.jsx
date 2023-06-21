@@ -34,7 +34,7 @@ export default function SimpleAccordion() {
   };
 
   return (
-    <div style={{ border: "1px solid rgba(0, 0, 0, 0.17)", marginRight: "50px" }}>
+    <div className="aacord" style={{ border: "1px solid rgba(0, 0, 0, 0.17)", marginRight: "50px" }}>
         {user.map((e) => { 
            return ( 
       <Accordion>

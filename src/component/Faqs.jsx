@@ -16,7 +16,7 @@ function Faqs() {
   return (
     <div className="faqs">
       <h2>Frequently Ask Question</h2>
-      <div style={{ border: "1px solid rgba(0, 0, 0, 0.17)" }}>
+      <div className="qusetion" style={{ border: "1px solid rgba(0, 0, 0, 0.17)" }}>
         {user.map((e) => {
           return (
             <Accordion>

@@ -65,3 +65,15 @@
 
 }
 
+@media (max-width: 912px){
+    .trading{
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 414px){
+    .description{
+        margin-bottom: -150px;
+    }
+}
+

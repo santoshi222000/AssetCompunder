@@ -4,7 +4,10 @@
         color: black;
         padding-left: 50px;
         padding-right: 50px;
+        border: 2px solid red;
 }
+
+
 
 .brief h2{
     text-align: left;
@@ -73,3 +76,21 @@
       padding: 12px 50px;
     }
   }
+  
+  @media (max-width: 1026px) {
+    .brief div h2{
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 536px) {
+    .brief div h2{
+      text-align: left;
+    }
+
+    .brief div{
+      
+      border: 2px solid red;
+    }
+  }
+  

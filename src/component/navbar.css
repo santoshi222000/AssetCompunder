@@ -52,3 +52,10 @@
       
 }
 
+@media (max-width:440px){
+    .hamburger{
+    margin-right: -50px;
+       }
+      
+}
+
