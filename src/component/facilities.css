@@ -11,3 +11,18 @@
    margin-bottom: 30px;
    margin-left: 50px;
 }
+
+
+@media (max-width: 500px) {
+    
+    .facility h2{
+        margin-left: 20px;
+    }
+  }
+
+@media (max-width: 400px) {
+    
+    .facility h2{
+        margin-left: 10px;
+    }
+  }

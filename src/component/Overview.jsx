@@ -27,7 +27,6 @@ function Overview() {
           <div>
             <div className="sidebar" key={user._id}>
               <div className="customPic">
-                <div></div>
                 <img src={b2} alt="" />
               </div>
               <div className="overview">

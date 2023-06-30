@@ -48,9 +48,6 @@ const Ul = styled.ul`
       color: red;
     }
 
-    li {
-      border: "2px solid red";
-    }
   }
 `;
 

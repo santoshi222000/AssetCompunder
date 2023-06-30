@@ -62,12 +62,7 @@ function Sidebaradmin() {
                 <span>Add Courses</span>
             </div>
             </Link>
-            <Link to='/delete' style={{textDecoration: "none", color: "black"}}>
-            <div>
-                <DeleteIcon style={{width:"18px"}}/>
-                <span>Delete</span>
-            </div>
-            </Link>
+            
             <Link to='/addCourseChapter' style={{textDecoration: "none", color: "black"}}>
             <div>
               <EditIcon style={{width:"18px"}}/>

@@ -1,8 +1,7 @@
 .faqs{
-    /* border: 1px solid black; */
     width: 100%;
     margin-top: 100px;
-    padding-right: 50px;
+    /* padding-right: 50px; */
     margin-bottom: 100px;
 }
 
@@ -18,3 +17,30 @@
     margin-left: 50px;
     margin-right: 50px;
 }
+
+@media (max-width: 500px) {
+
+    .faqs h2{
+        margin-left: 20px;
+    }
+    
+    
+    .qusetion{
+      width: 92%;
+      margin-left: 20px;
+      margin-right: 0px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+
+    .faqs h2{
+        margin-left: 10px;
+    }
+    
+    .qusetion{
+      width: 93%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }

@@ -1,16 +1,13 @@
 .brief{
-        width: 100%;
+        width: 90%;
         height: 100%;
         color: black;
-        padding-left: 50px;
-        padding-right: 50px;
-        border: 2px solid red;
+        margin-left: 50px;
 }
 
 
-
 .brief h2{
-    text-align: left;
+    text-align: center;
 }
 
 .desc{
@@ -25,8 +22,8 @@
 }
 
 
-.button-50 {
-    width: 100%;
+.button-30 {
+    /* width: 100%; */
     appearance: button;
     background-color: #000;
     background-image: none;
@@ -53,33 +50,38 @@
     white-space: nowrap;
   }
   
-  .button-50:focus {
+  .button-30:focus {
     text-decoration: none;
   }
   
-  .button-50:hover {
+  .button-30:hover {
     text-decoration: none;
   }
   
-  .button-50:active {
+  .button-30:active {
     box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
     outline: 0;
   }
   
-  .button-50:not([disabled]):active {
+  .button-30:not([disabled]):active {
     box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
   
   @media (min-width: 768px) {
-    .button-50 {
-      padding: 12px 50px;
+    .button-30 {
+      padding: 12px 30px;
     }
   }
   
   @media (max-width: 1026px) {
     .brief div h2{
       text-align: center;
+    }
+
+    .brief{
+      width: 100%;
+      margin-left: 0px;
     }
   }
   
@@ -88,9 +90,12 @@
       text-align: left;
     }
 
-    .brief div{
-      
-      border: 2px solid red;
-    }
+  }
+
+  @media (max-width: 1300px){
+    .brief h2{
+      text-align: left;
+  }
+  
   }
   

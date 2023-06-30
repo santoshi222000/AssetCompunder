@@ -4,7 +4,7 @@
 }
 
 .form{
-    width: 32%;
+    max-width: 400px;
     margin: auto;
     margin-bottom: 100px;
     margin-top: 50px;
@@ -54,6 +54,8 @@
     padding: 3px 8px;
 }
 
+
+
 .button-50 {
     width: 100%;
     appearance: button;
@@ -70,7 +72,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    margin: 0 5px 10px 0;
+    margin: 10px 5px 10px 0;
     overflow: visible;
     padding: 12px 40px;
     text-align: center;
@@ -104,5 +106,54 @@
     .button-50 {
       padding: 12px 50px;
     }
+  }
+  
+  @media (max-width: 538px) {
+    .form{
+      max-width: 300px;
+    }
+
+    .form input{
+      margin-left: 13px;
+        padding: 5px 5px;
+        font-size: 12px;
+      
+    }
+
+    .para1{
+      margin-bottom: -10px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .form{
+      max-width: 250px;
+      /* margin-left: 5px;
+      margin-right: 5px; */
+    }
+
+    .form input{
+      margin-left: 13px;
+      margin-bottom: 10px;
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+
+    
+.form h2{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.form-details div{
+  margin-bottom: 10px;
+}
+
+.para1{
+  margin-bottom: -20px;
+}
+
+
   }
 

@@ -36,7 +36,6 @@ function Login() {
         { email: email.current.value, password: password.current.value },
         dispatch
       )
-
        toast.success('Login Successful');
     } catch (error) {
       toast.warn('Login Failed');
@@ -73,9 +72,6 @@ function Login() {
               name="password"
               ref={password}
             />
-            <Link to="/resetpassword" >
-              <p className="forget">Forget Password</p>
-            </Link>
             <div>
               <button class="button-50" role="button" type="submit" disabled={isFetching}>
                 {isFetching ? <CircularProgress size="20px" /> : "Login"}
@@ -83,7 +79,7 @@ function Login() {
            
             </div>
 
-            <p className="para" style={{ textAlign: "center", color: "black" }}>
+            <p className="para1" style={{ textAlign: "center", color: "black", fontSize: "12px" }}>
               Don't have an account, yet?{" "}
               <span onClick={navigateRegister} style={{ color: "blue", cursor: "pointer" }}>
                 Register

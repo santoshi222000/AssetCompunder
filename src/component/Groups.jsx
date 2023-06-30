@@ -16,7 +16,6 @@ function Groups() {
   return (
     <div className="groups">
       <div className="groupImg">
-        <h1>A <span>TRADING </span> STRATEGIES GROUP FOR YOU!</h1>
         <img src={group} alt="" />
       </div>
       <div className="choose">

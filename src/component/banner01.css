@@ -8,6 +8,7 @@
     justify-content: space-around;
     padding-left: 60px;
     padding-right: 60px;
+    border: 2px solid red;
 }
 
 .banner01 div{
@@ -22,6 +23,7 @@
 
 .rightBanner{
     width: 50%;
+    border: 2px solid red;
 
 }
 

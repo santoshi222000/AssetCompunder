@@ -7,10 +7,10 @@
 
 .carousel  {
     width: 70%;
-    height: 60%;
+    height: 70%;
     /* display: none; */
     position: absolute;
-    top: 140px;
+    top: 110px;
     margin: auto;
 
 }
@@ -46,17 +46,12 @@
 
 @media (max-width: 700px){
     
-    .inner{
-        display: none;
+    .home{
+        height: 400px;
     }
-
-
-    .carousel button{
-        display: none;
-    }
-
-    .carousel-inner{
-        background: url('../assets/Images/aa.png') no-repeat  center;
+  
+    .carousel {
+      display: none;
     }
 }
 

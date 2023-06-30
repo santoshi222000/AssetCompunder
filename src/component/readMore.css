@@ -25,3 +25,22 @@
   padding-top: 20px;
   margin-bottom: 20px;
 }
+
+
+@media (max-width: 500px) {
+    
+  .card{
+    width: 92%;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  .card{
+    width: 93%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

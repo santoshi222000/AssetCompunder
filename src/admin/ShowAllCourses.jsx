@@ -1,18 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./showAllCourses.css";
 import { useEffect } from "react";
 import { getAllCourse, deleteCourse } from "../services/api.js";
 import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 function ShowAllCourses() {
   const [course, setCourse] = useState([]);
+
+  const { user, isFetching, error, dispatch } = useContext(AuthContext);
 
   useEffect(() => {
     getAllCourses();
   }, []);
 
   const getAllCourses = async () => {
+  
+    const token = user.accessToken
+    console.log(token);
     let res = await getAllCourse();
     console.log(res);
     setCourse(res.data);

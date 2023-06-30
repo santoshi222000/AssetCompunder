@@ -8,7 +8,7 @@ const getAxiosHeader = (token) => {
     return {
         headers: {
             'Content-Type': 'application/json',
-            'authorization': "Bearer" + token
+            'Authorization': "Bearer" + token
         }
     }
 }
@@ -26,15 +26,15 @@ export const addcourses = async(data)=>{
 
 export  const getcourse = async ()=>{
    try{
-       return await axios.get(`${URL}/api/route/`, getAxiosHeader()); 
+       return await axios.get(`${URL}/api/route/`); 
    }catch(error){
       console.log("error while getting the course", error);
    }   
 }
 
-export const getAllCourse = async ()=>{
+export const getAllCourse = async (token)=>{
     try{
-     return await axios.get(`${URL}/api/route/allCourses`);
+     return await axios.get(`${URL}/api/route/allCourses` );
     }catch(error){
         console.log("something is wrong to get all course table", error);
     }

@@ -1,5 +1,6 @@
 .sidebaradmin{
-    flex: 1;
+    width: 20%;
+    border: 1px solid red;
  
 }
 
@@ -56,3 +57,9 @@
     transform: scale(1.1);
 }
 
+
+@media (max-width: 1026px) {
+
+  
+
+}

@@ -48,22 +48,28 @@
 }
 
 .maindiv div {
-    width: 26%;
+    /* width: 26%; */
+    width: 100px;
     min-height: 100px;
     border-radius: 50%;
+ 
 }
 
 .maindiv .first{
-    width: 8%;
+    /* width: 8%; */
+   width: 100px;
     max-height: 100px;
     position: absolute;
     border: 1px solid white;
+    
 }
 
 .maindiv .second{
+ 
      margin-top: -10px;
      margin-left: -10px;
      border: 1px solid white;
+
 }
 
 
@@ -147,6 +153,8 @@
        }
 }
 
+
+
 @media (max-width: 334px){
     .upperfototer{
         height: 1000px;
@@ -158,3 +166,5 @@
         height: 1100px;
        }
 }
+
+

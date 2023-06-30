@@ -43,26 +43,10 @@ function BriefInfo() {
             <p className="info">{e.description}</p>
             <p className="fee">{e.amount}</p>
         <p className="fee">{e.start}</p>
-           <button class="button-50" role="button">Enroll Now</button>
+           <button class="button-30" role="button">Enroll Now</button>
           </div>
          )
         })}
-      {/* <div>
-        <h2>usdinr</h2>
-        <p className="desc">
-          This course is Provided by Asset Compounder Academy
-        </p>
-        <p className="info">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          alias vero vitae laudantium atque debitis architecto! Officia
-          reiciendis suscipit quos quam laudantium est.
-        </p>
-        <p className="fee">Amount: 7999</p>
-        <p className="fee">Start: monday</p>
-        <button class="button-50" role="button">
-          Enroll Now
-        </button>
-      </div> */}
     </div>
   );
 }

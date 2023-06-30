@@ -1,4 +1,5 @@
 .maindashboard{
-    flex: 5.3;
+    width: 80%px;
     /* background-color: blue; */
+    border: 2px solid black;
 }

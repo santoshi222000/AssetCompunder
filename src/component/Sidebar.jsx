@@ -11,21 +11,26 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <div className="sides">
-      <div>
+      <div className="zoom-div">
+        <div className="zoom-in-zoom-out">
         <Link to="https://www.facebook.com">
           {" "}
           <img src={fb} alt="" />
         </Link>
-        <Link to="https://www.instagram.com" className="insta">
-          <Link>
+        </div>
+       <div className="zoom-in-zoom-out">
+       <Link to="https://www.instagram.com" className="insta">
+          
             <img src={insta} alt="" />
-          </Link>
+          
         </Link>
-        <Link to="https://www.youtube.com/@AssetCompoundersAcademy">
-          <Link>
+       </div>
+       <div className="zoom-in-zoom-out">
+       <Link to="https://www.youtube.com/@AssetCompoundersAcademy">
             <img src={utube} alt="" />
-          </Link>
+          
         </Link>
+       </div>
       </div>
     </div>
   );

@@ -8,7 +8,6 @@
     height: 500px;
     width: 100%;
     margin-top: 30px;
-    /* border: 1px solid red; */
 }
 
 .groupImg  h1{
@@ -63,27 +62,23 @@
            display: none;
     }
 
-    .groupImg h1{
-        display: block;
-        font-size: 5em;
-        padding: 50px 50px;
-        text-align: center;
-        font-weight: bold;
-        text-shadow: 10px 10px 10px;
-    }
+   .groupImg{
+       background: url('../assets/Images/trade1.jpg');
+       background-position: center; /* Center the image */
+       background-repeat: no-repeat; /* Do not repeat the image */
+       background-size: cover;
+       height: 350px;
+   }
 
-    .groupImg h1 span{
-        color: rgb(243, 166, 0);
-    }
-
-    .choose{
-        margin-top: -20px;
-    }
+    
 
   }
 
-  @media (max-width:300px){
-    .groupImg{
-        margin-top: 100px;
+@media (max-width:500px){
+
+    .choose{
+        padding-left: 0px;
+        padding-right: 5px;
     }
+
   }

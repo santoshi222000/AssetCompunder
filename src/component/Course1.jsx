@@ -36,7 +36,7 @@ function Course1() {
         <div className=" box3">
           <iframe
             width="100%"
-            height="320"
+            height="400"
             src="https://www.youtube.com/embed/rgzphzmxeNc"
             title="YouTube video player"
             frameborder="0"

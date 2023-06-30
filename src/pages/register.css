@@ -4,7 +4,7 @@
 }
 
 .forms{
-    width: 32%;
+    width: 400px;
     margin: auto;
     margin-bottom: 50px;
     padding-left: 20px;
@@ -35,7 +35,7 @@
 
 
 .button-50 {
-    width: 30%;
+    width:  100px;
     appearance: button;
     background-color: #000;
     background-image: none;
@@ -50,9 +50,9 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    margin: 0 5px 10px 0;
+    /* margin: 0 5px 10px 0; */
     overflow: visible;
-    padding: 12px 40px;
+    padding: 12px 20px;
     text-align: center;
     text-transform: none;
     touch-action: manipulation;
@@ -88,6 +88,75 @@
   @media (min-width: 768px) {
     .button-50 {
       padding: 12px 50px;
+    }
+  }
+
+    
+  @media (max-width: 538px) {
+    .forms{
+      max-width: 350px;
+    }
+
+    .form-input input{
+      margin-bottom: 10px;
+      padding: 5px 5px;
+      font-size: 12px;
+    }   
+
+    .para{
+      margin-bottom: 10px;
+      margin-top: -15px;
+      /* border: 2px solid red; */
+    }
+    
+  }
+
+  @media (max-width: 370px) {
+    .forms{
+      max-width: 300px;
+      /* margin-left: 5px;
+      margin-right: 10px; */
+    }
+
+    .form-input input{
+      margin-bottom: 10px;
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+
+
+
+    
+.forms h2{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.para{
+  /* margin-top: -20px; */
+  margin-bottom: 10px;
+}
+  }
+
+  @media (max-width: 318px){
+
+    .button-50{
+      width: 80px;
+    }
+
+    .forms h2{
+      margin-bottom: 10px;
+      margin-top: -20px;
+    }
+    
+    .forms{
+     width: 250px;
+    }
+
+    .form-input input{
+      margin-bottom: 5px;
+      font-size: 12px;
     }
   }
 

@@ -59,7 +59,7 @@ function Footer() {
       </div>
       <hr />
       <hr />
-      <p className="para">Copyright @ assetcompounderacademy. All rights reserved</p>
+      <p className="para2">Copyright @ assetcompounderacademy. All rights reserved</p>
     </div>
   );
 }

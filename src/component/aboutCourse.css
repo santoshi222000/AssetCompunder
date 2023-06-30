@@ -43,14 +43,17 @@
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+   
 }
 
 .boxes{
-    width: 45%;
+    /* width: 45%; */
+    max-width: 500px;
     height: 250px;
     margin: 20px;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    
 }
 
 .course-img{
